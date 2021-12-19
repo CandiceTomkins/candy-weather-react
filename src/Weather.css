@@ -5,13 +5,15 @@
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid coral;
-  color: coral;
+  color: white;
+  background-color: coral;
 }
 .Weather form {
   margin-bottom: 20px;
 }
 
 .Weather h1 {
+  color: white;
   font-size: 24;
   font-weight: 100;
   margin: 20px;
@@ -25,15 +27,17 @@
   font-size: 16;
   list-style: none;
 }
-.Weather img {
+.Weather canvas {
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  margin-top: 5px;
+  height: 48px;
+  width: 48px;
   display: inline-block;
+  color: white;
 }
 
 .Weather .temperature {
-  font-size: 64px;
+  font-size: 48px;
   line-height: 64px;
 }
 
