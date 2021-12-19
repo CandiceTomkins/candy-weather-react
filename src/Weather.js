@@ -1,7 +1,17 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather() {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  const apiKey = "2c3febe392abed71dac008fe06e88cba";
+  let city = "Lisbon";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+
   return (
     <div className="Weather">
       <form>
@@ -11,10 +21,15 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city..."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -23,19 +38,21 @@ export default function Weather() {
         <li>Sunday 0900</li>
         <li>Sunny</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="sun"
-          />{" "}
-          18°C
+          />
+
+          <span className="temperature">18</span>
+          <span className="unit">°C</span>
         </div>
         <div className="col-6">
           <ul>
-            <li>Humidity</li>
-            <li>Precipitation</li>
-            <li>Wind</li>
+            <li>Humidity 65%</li>
+            <li>Precipitation 0%</li>
+            <li>Wind 9 km/h</li>
           </ul>
         </div>
       </div>
