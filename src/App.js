@@ -9,6 +9,7 @@ export default function App() {
         <a
           href="https://github.com/CandiceTomkins/candy-weather-react"
           target="_blank"
+          rel="noreferrer"
         >
           open-sourced on GitHub
         </a>
