@@ -5,11 +5,11 @@ import "./WeatherForecastDay.css";
 export default function WeatherForecastDay(props) {
   function maxTemperature() {
     let temperature = Math.round(props.data.temp.max);
-    return `${temperature}°`;
+    return `${temperature}`;
   }
   function minTemperature() {
     let temperature = Math.round(props.data.temp.min);
-    return `${temperature}°`;
+    return ` | ${temperature}`;
   }
 
   function day() {
@@ -29,6 +29,7 @@ export default function WeatherForecastDay(props) {
         <span className="WeatherForecast-temperatures-max">
           {maxTemperature()}
         </span>
+
         <span className="WeatherForecast-temperatures-min">
           {minTemperature()}
         </span>

@@ -4,14 +4,11 @@
   border: 1px solid white;
   border-radius: 4px;
   color: white;
-  background: linear-gradient(
-    106.2deg,
-    rgb(0, 186, 217) -4.3%,
-    rgb(121, 134, 204) 14.1%,
-    rgb(150, 117, 206) 34.7%,
-    rgb(186, 105, 200) 53%,
-    rgb(240, 71, 112) 74.7%,
-    rgb(239, 162, 92) 95.6%
+  background: radial-gradient(
+    circle at 11.7% 80.6%,
+    rgb(249, 185, 255) 0%,
+    rgb(177, 172, 255) 49.3%,
+    rgb(98, 203, 255) 89%
   );
   padding: 16px;
 }
@@ -47,7 +44,7 @@
 
 .Weather .temperature {
   font-family: "Rock 3D", cursive;
-  color: blueviolet;
+  color: white;
   font-size: 64px;
   line-height: 64px;
 
@@ -56,7 +53,7 @@
 
 .Weather .unit {
   font-family: "Rock 3D", cursive;
-  color: blueviolet;
+  color: white;
   font-size: 20px;
   position: relative;
   top: -34px;
