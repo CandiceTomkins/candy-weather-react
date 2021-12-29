@@ -1,6 +1,7 @@
 .Weather {
   border-radius: 4px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+
   border: 1px solid white;
   border-radius: 4px;
   color: white;
@@ -12,15 +13,16 @@
 }
 
 .Weather h1 {
-  color: #ff44cc;
-  font-size: 32px;
+  font-family: "Rock 3D", cursive;
+  color: white;
+  font-size: 60px;
   font-weight: 100;
   margin: 20px 0 0 0;
-  line-height: 29px;
+  padding-bottom: 10px;
 }
 .Weather ul {
   margin: 0;
-  padding: 0;
+  padding-top: 15px;
 }
 
 .Weather li {
@@ -34,6 +36,7 @@
 }
 
 .Weather .temperature {
+  font-family: "Rock 3D", cursive;
   color: blueviolet;
   font-size: 64px;
   line-height: 64px;
@@ -42,6 +45,7 @@
 }
 
 .Weather .unit {
+  font-family: "Rock 3D", cursive;
   color: blueviolet;
   font-size: 20px;
   position: relative;
