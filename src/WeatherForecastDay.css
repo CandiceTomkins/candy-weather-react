@@ -1,11 +1,13 @@
 .WeatherForecast-day {
   color: white;
+  font-size: 14px;
 }
 
 .WeatherForecast-temperatures-max {
-  padding: 6px;
+  font-size: 14px;
+
   font-weight: bold;
 }
 .WeatherForecast-temperatures-min {
-  padding: 6px;
+  font-size: 14px;
 }
