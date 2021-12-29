@@ -1,4 +1,13 @@
-.WeatherForecast-day,
-.WeatherForecast-temperatures {
-  color: lightyellow;
+.WeatherForecast-day {
+  color: white;
+}
+
+.WeatherForecast-temperatures-max {
+  padding: 6px;
+  font-weight: bold;
+  color: yellow;
+}
+.WeatherForecast-temperatures-min {
+  padding: 6px;
+  color: lightpink;
 }
